@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discovery Log</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <button aria-label="Menu" onclick="runDropDown()" class="dropmenu"><img class="dropimg" src="img/drawing.svg" alt="" id="image"></button>
+                <div id="drop" class="dropdowncontent">
+                    <a href="index.html">Home</a>
+                    <a href="litreview.html">Literature review</a>
+                    <a class="current" href="discovlog.html">Discovery Log</a>
+                    <a href="video.html">Video</a>
+                </div>
+                <li class="title">
+                    <h1>Discovery Log</h1> </li>
+        </ul>
+    </nav>
+
+
+    <!-- This entire section is all the side bar for the page, allows navigation for user -->
+
+
+    <div class="container">
+        <div class="sidebar">
+            <p class="quicklink">Quick links:</p>
+            <div class="sidedrop1">
+                <p>Weeks <button aria-label="Sidebar" onclick="rundrop1()" class="weekdrop1"><img src="img/arrow.svg" alt="#"></button></p>
+
+            </div>
+            <div id="sidedrop1" class="drop1content">
+                <a href="#week1">Week 1</a>
+                <a href="#week2">Week 2</a>
+                <a href="#week3">Week 3</a>
+                <a href="#week4">Week 4</a>
+                <a href="#week5">Week 5</a>
+                <a href="#week6">Week 6</a>
+                <a href="#week7">Week 7</a>
+                <a href="#week8">Week 8</a>
+                <a href="#week9">Week 9</a>
+                <a href="#week10">Week 10</a>
+                <a href="#week11">Week 11</a>
+                <a href="#week12">Week 12</a>
+                <a href="#week13">Week 13</a>
+                <a href="#week14">Week 14</a>
+                <a href="#week15">Week 15</a>
+            </div>
+            <div class="sidedrop2">
+                <p>HTML code <button onclick="rundrop2()" class="weekdrop2"><img src="img/arrow.svg" alt="#"></button></p>
+                <div id="sidedrop2" class="drop2content">
+                    <a href="#doctype">&lt;doctype&gt;</a>
+                    <a href="#head">&lt;head&gt;</a>
+                    <a href="#link">&lt;link&gt;</a>
+                    <a href="#script">&lt;script&gt;</a>
+                    <a href="#meta">&lt;meta&gt;</a>
+                    <a href="#title">&lt;title&gt;</a>
+                    <a href="#body">&lt;body&gt;</a>
+                    <a href="#class">class</a>
+                    <a href="#nav">&lt;nav&gt;</a>
+                    <a href="#ol">&lt;ol&gt;</a>
+                    <a href="#ul">&lt;ul&gt;</a>
+                    <a href="#div">&lt;div&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End of sidebar code. -->
+
+
+    <div class="logtext">
+        <h2>Introduction</h2>
+        <p>
+            This discovery log will act as a learning device, showing the many different things I have come across during my time studying Web Foundations, and includes many different links and useful information. The log also has a bank of HTML code that you can
+            access and see how I have overcome different difficulties during my time creating this website.
+        </p>
+        <h2 id="week1">Week 1</h2>
+
+        <ul>
+            <li>Beginning to work with VM - link to start VM is <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a></li>
+            <li>Install chrome secureshell plugin allows user to access the VM</li>
+            <li>Command to run mySQL in VM - mysql -u root -p (password root)</li>
+            <li>In order to create a website, you need to create a directory and upload or create a page which at least has an index.html</li>
+            <li>Then create the server by typing http-server</li>
+            <li>Finally you can see the website you create by entering the URL of the IP displayed on the myVM website.</li>
+            <li>Introduction to coursework outline for the year.</li>
+        </ul>
+        <h2 id="week2">Week 2</h2>
+        <ul>
+            <li>This week focused on web security and how we distribute our information online</li>
+            <li>I found this week very useful as it made me consider just how much information is out there about me.</li>
+            <li>The task was to identify all of the information people generate on a day to day basis.</li>
+            <li>We were also tasked with thinking about how information is received and the many different ways that companies can classify that information.</li>
+        </ul>
+        <h2 id="week3">Week 3</h2>
+        <ul>
+            <li>This week we had to start thinking about how to lay out the Literature Review coursework we were set.</li>
+            <li>Literature review topic: Mitigating personal information exposure on the web.</li>
+            <li>We had a number of different options on how to start, such as creating a mindmap on topics around the literature review we thought of and the effectiveness of search terms</li>
+            <li>Useful information - Keep all the sources you look through no matter how bad, as they could be useful in the future.</li>
+            <li>Don’t use wikipedia as a source - high chance of information not being valid</li>
+            <li>Preferred sources - Academic journals, cited news articles etc.</li>
+            <li><a href="https://coggle.it/?lang=en-GB">https://coggle.it/?lang=en-GB</a> is a good source if you need to create a mindmap</li>
+        </ul>
+        <h2 id="week4">Week 4</h2>
+        <ul>
+            <li>This week we went over writing styles and had to change longer sentences into shorter ones</li>
+            <li>The purpose was to think about the word count for the literature review and how we could say what we wanted to say in fewer words</li>
+            <li>Somewhat useful, made you think about how to word certain aspects of the review.</li>
+        </ul>
+        <h2 id="week5">Week 5</h2>
+        <ul>
+            <li>Reading week - gave us time to do some work on acquiring references on our literature reviews</li>
+        </ul>
+        <h2 id="week6">Week 6</h2>
+        <ul>
+            <li>This week we were introduced to markup in relation to html.</li>
+            <li>We created a basic index HTML page and uploaded it to our VM to see how the whole process worked.</li>
+            <li>I had difficulty locating the files i created from winSCP but found out how soon after.</li>
+            <li>Very useful link on HTML elements: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a></li>
+        </ul>
+        <h2 id="week7">Week 7</h2>
+        <ul>
+            <li>This week was very useful in terms of lecture and practical content.</li>
+            <li>The focus was on separating form and content, in other words making sure that the content displays on a single page and does not have any of the page design elements in it.</li>
+            <li>This was very relevant to our coursework as we will be marked based on criteria like this.</li>
+        </ul>
+        <h2 id="week8">Week 8</h2>
+        <ul>
+            <li>This week's focus was on addressing</li>
+            <li>In other words, how links should look for the user to make it so that they can understand them.</li>
+        </ul>
+        <h2 id="week9">Week 9</h2>
+        <ul>
+            <li>During week 9, the focus was on using and inserting images into a website. We used many different methods, such as inserting a local image or inserting an image which is referred from a URL.</li>
+            <li>First time playing around with the &lt;a&gt; tag.</li>
+        </ul>
+        <h2 id="week10">Week 10</h2>
+        <ul>
+            <li>Week 10 gave us a chance to have a look into more text editors to find out which editor we preferred.</li>
+            <li>I chose to use <a href="https://atom.io/">Atom</a> as my text editor as I enjoyed the versatility and how you could make the editor yours by using different packages and themes.</li>
+        </ul>
+        <h2 id="week11">Week 11</h2>
+        <ul>
+            <li>Christmas lecture, had a bit of fun creating a christmas card style web page with a snowman. </li>
+        </ul>
+        <h2 id="week12">Week 12</h2>
+        <ul>
+            <li>This week we were introduced to the concept of website design and how design could be implemented into our own websites. </li>
+            <li>Design is a very important aspect of website design as it is what keeps users using your website. If your site does not do a good enough job of keeping the user there, they will go and find another website which does things better.</li>
+        </ul>
+        <h2 id="week13">Week 13</h2>
+        <ul>
+            <li>This week focused on usability in terms of website use. </li>
+            <li>This meant that the website we create will need to cater to users who may not be able to use all cognitive functions.</li>
+            <li>For example, some people viewing your website may be colour blind therefore if your site has very low contrast colours it will be difficult for the user to navigate.</li>
+        </ul>
+        <h2 id="week14">Week 14</h2>
+        <ul>
+            <li>This lecture included a very interesting use of javascript within a website to create a game which featured Jacek chasing diamonds around a canvas.</li>
+            <li>The practical we went through introduced us to JavaScript through us trying to cheat at the game shown at the lecture by increasing the speed in which our characters collected diamonds.</li>
+        </ul>
+        <h2 id="week15">Week 15</h2>
+        <ul>
+            <li>Week 15 had us thinking more about accessibility for users of the website we are going to be creating. </li>
+            <li>The practical was very interesting. We simulated having many different conditions such as sight impairment or arthritis and tried to complete tasks that were usually mundane</li>
+            <li>We found that it was much more difficult to complete the tasks that we were set when simulating impairments. This made us think about how we were going to try and include help for these types of disabilities within our websites.</li>
+        </ul>
+
+    </div>
+    <div class="htmlcode">
+        <h2>HTML code</h2>
+        <p>Side note: All elements of HTML code must have a closing tag too. So no matter what tag, you will need to have the &lt;/&gt; of the same tag when it needs to be closed.</p>
+
+        <h3 id="doctype">&lt;!DOCTYPE html&gt;</h3>
+        <p>This is how all HTML code documents should start. This lets the page know that all content of the page is written in HTML code and needs to be understood as such.</p>
+
+        <h3 id="head">&lt;head&gt;</h3>
+        <p>The head tag is the tag which contains all the important declarations for the website rather than actual content. Elements normally included in the head tag include linking to style sheets, declaring the text format, the title of the page and more.</p>
+        <p>Example of head tag in use:</p>
+        <pre><code>
+&lt;head&gt;
+    &lt;link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style3.css"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"&gt;
+    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts.js"&gt;&lt;/script&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;Discovery Log&lt;/title&gt;
+&lt;/head&gt;
+        </code></pre>
+        <h3 id="link">&lt;link&gt;</h3>
+        <p>The link tag is what allows the page to be linked to other pages. This is most commonly done to link a page to a CSS style sheet, separating form and content.</p>
+        <p>Example of link tag in use:</p>
+        <pre><code>
+          &lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
+        </code></pre>
+
+        <h3 id="script">&lt;script&gt;</h3>
+        <p>I have used this tag within my website in order to link to a javascript file, which stores different functions that help make the website more aesthetically pleasing. </p>
+        <p>Example of script tag:</p>
+        <pre><code>
+          &lt;script type="text/javascript" src="scripts.js"&gt;&lt;/script&gt;
+        </code></pre>
+
+        <h3 id="meta">&lt;meta&gt;</h3>
+        <p>The meta tag provides metadata about your HTML page. This can include different things such as setting the text format for the page.</p>
+        <p>Example of meta tag:</p>
+        <pre><code>
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        </code></pre>
+
+        <h3 id="title">&lt;title&gt;</h3>
+        <p>The title tag allows you to set the title of the page you are on. If you look closely, you will find that the title of this page is Discovery Log, shown on the selected tab at the top of the browser.</p>
+        <p>Example of title tag:</p>
+        <pre><code>
+          &lt;title&gt;Discovery Log&lt;/title&gt;
+        </code></pre>
+
+        <h3 id="body">&lt;body&gt;</h3>
+        <p>The body tag is the main part of your webpage. This will include all of the content that the web page reads and outputs it to the page without any formatting (unless you use a &lt;style&gt; element within the body which is bad practice).</p>
+        <p>Example of body tag: (greatly reduced for spacial reasons)</p>
+        <pre><code>
+          &lt;body&gt;
+            &lt;div class="container"&gt;
+              &lt;p class="quicklink"&gt;Quick links:&lt;/p&gt;
+              &lt;div class="sidedrop1"&gt;
+                &lt;p&gt;Weeks &lt;button onclick="rundrop1()" class="weekdrop1"&gt;&lt;img src="img/arrow.svg" alt="#"&gt;&lt;/button&gt;&lt;/p&gt;
+          &lt;/body&gt;
+        </code></pre>
+
+        <h3 id="class">class</h3>
+        <p>Declaring a class within the HTML code allows you to reference just the class directly when changing the appearance using CSS. This allows for the actual element to stay in standard form if any other content uses the same element.</p>
+
+        <h3 id="nav">&lt;nav&gt;</h3>
+        <p>This tag is used to declare anything to do with navigation. Most websites have navigation bars which allow the user to navigate through the website. If you have a site with multiple pages, the chances are that you will need a navigation bar of
+            some sort to allow ease of use. The nav bar should have a similar format throughout different pages.</p>
+        <p>Example of nav tag:</p>
+        <pre><code>
+          &lt;nav&gt;
+              &lt;ul&gt;
+                  &lt;li class="dropdown"&gt;
+                      &lt;button aria-label="Menu" onclick="runDropDown()" class="dropmenu"&gt;&lt;img class="dropimg" src="img/drawing.svg" alt="" id="image"&gt;&lt;/button&gt;
+                      &lt;div id="drop" class="dropdowncontent">
+                          &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                          &lt;a href="litreview.html"&gt;Literature review&lt;/a&gt;
+                          &lt;a class="current" href="discovlog.html"&gt;Discovery Log&lt;/a&gt;
+                          &lt;a href="video.html"&gt;Video&lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;li class="title"&gt;
+                          &lt;h1>Discovery Log&lt;/h1&gt; &lt;/li&gt;
+              &lt;/ul>
+          &lt;/nav>
+
+        </code></pre>
+
+        <h3 id="ol">&lt;ol&gt;</h3>
+        <p>The ol tag allows you to create an ordered list, in other words a numbered list.. In order to create list elements within this tag, use &lt;li&gt;(your text here)&lt;/li&gt;</p>
+        <p>Example of ol tag:</p>
+        <pre><code>
+          &lt;ol&gt;
+            &lt;li&gt;item 1&lt;/li&gt;
+            &lt;li&gt;item 2&lt;/li&gt;
+            &lt;li&gt;item 3&lt;/li&gt;
+          &lt;/ol&gt;
+        </code></pre>
+
+        <h3 id="ul">&lt;ul&gt;</h3>
+        <p>The ul tag functions very similarly to the ol tag, however the list is unordered so by default, any li elements within this will be bullet points.</p>
+        <p>Example of ul tag:</p>
+        <pre><code>
+          &lt;ul&gt;
+            &lt;li&gt;item 1&lt;/li&gt;
+            &lt;li&gt;item 2&lt;/li&gt;
+            &lt;li&gt;item 3&lt;/li&gt;
+          &lt;/ul&gt;
+        </code></pre>
+
+        <h3 id="div">&lt;div&gt;</h3>
+        <p>The div tag allows you to separate content into different boxes essentially. The div tag is very useful when creating the layout of your web page.</p>
+        <p>Example of div tag:</p>
+        <pre><code>
+          &lt;div class="reviewtext"&gt;
+              &lt;h2 class="reviewtitle"&gt;Preventing Data Leakage on the web&lt;/h2&gt;
+        </code></pre>
+
+    </div>
+
+
+
+    <footer>
+        <p>&copy; copyright student 2017</p>
+        <p> Link to validation of this page -<a href="http://validator.w3.org/check?uri=referer">here</a></p>
+    </footer>
+</body>
+
+</html>

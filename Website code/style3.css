@@ -1,0 +1,181 @@
+.logtext {
+    display: block;
+    padding: 4em 10% 0 20%;
+}
+
+.container {
+    display: block;
+}
+
+.logtext ul {
+    padding: 1em;
+}
+
+.logtext p {
+    padding: 1em;
+}
+
+.htmlcode {
+    padding: 0 10% 0 20%;
+}
+
+.htmlcode p {
+    padding: 1em 0;
+}
+.htmlcode > pre {
+  padding: 0 10%;
+  display:block;
+  color: #fff;
+  background-color: #324851;
+  overflow: scroll;
+  min-height: 3em;
+  margin-bottom: 1em;
+}
+
+.sidebar {
+    position: fixed;
+    top: 5em;
+    left: 1em;
+    width: 8em;
+    background-color: #324851;
+    color: #fff;
+    border: 5px solid #FF8D3F;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.sidebar p {
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+}
+
+.sidebarcontent {
+    padding: 1em;
+}
+
+.sidebarcontent ul {
+    list-style-type: none;
+}
+
+.quicklink {
+    padding-top: 0.5em;
+}
+
+.weekdrop1 {
+    width: 2em;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #fff;
+}
+
+.weekdrop2 {
+    width: 2em;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #fff;
+}
+
+.weekdrop1 img {
+    height: 1.5em;
+}
+
+.weekdrop2 img {
+    height: 1.5em;
+}
+
+.drop1content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 8em;
+    top: 8.1em;
+}
+
+.drop1content a {
+    background-color: #324851;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding-left: 0.5em;
+}
+
+.drop1content a:hover {
+    background-color: black;
+}
+
+.drop2content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 8em;
+    top: 8.1em;
+}
+
+.drop2move {
+    left: 8.6em;
+}
+
+.drop2content a {
+    background-color: #324851;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-left: 0.5em;
+}
+
+.drop2content a:hover {
+    background-color: black;
+}
+
+.show {
+    display: block;
+}
+
+
+/* This section is just for the animation for the sidebar buttons. */
+
+.weekdrop1 {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.weekdrop2 {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+}
+
+.weekdropchange {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 50em) {
+    .sidebar {
+        display: none;
+    }
+    .htmlcode {
+        padding: 0 5%;
+    }
+    .logtext {
+        display: block;
+        padding: 1em 5% 4em 5%;
+    }
+}

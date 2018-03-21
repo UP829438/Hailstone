@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <button aria-label="Menu" onclick="runDropDown()" class="dropmenu"><img class="dropimg" src="img/drawing.svg" alt="" id="image"></button>
+                <div id="drop" class="dropdowncontent">
+                    <a href="index.html">Home</a>
+                    <a href="litreview.html">Literature review</a>
+                    <a href="discovlog.html">Discovery Log</a>
+                    <a class="current" href="video.html">Video</a>
+                </div>
+                  <li class="title"><h1>Video</h1></li>
+        </ul>
+    </nav>
+<div class="text">
+<h2>Welcome</h2>
+<p>This is my video page. The video was created as part of some coursework that I had to complete in 2015. The brief was to create a music video for a song of our choice. We could choose from three different styles of video. We could either make a narrative video, or an interpretive video. I chose to create a narrative video in the form of a stop motion. I tried to choose a shorter video as I knew that stop motion takes a very long time to produce.</p>
+</div>
+<div class="vid">
+  <video aria-label="Video" onclick="this.play()" class="video" controls="controls">
+    <source src="img/video.mp4" type="video/mp4">
+    <source src="img/video.webm" type="video/webm">
+    <source src="img/video.ogg" type="audio/ogg">
+      <track label="English subtitles" kind="subtitles" src="img/captions.vtt" srclang="en">
+        Your browser does not support the video format.
+      </video>
+      <div class="vidref">
+      <p>Original song has been replaced for copyright reasons.</p>
+    </div>
+
+
+
+
+</div>
+<footer>
+  <p>&copy; copyright student 2017</p>
+    <p> Link to validation of this page -<a href="http://validator.w3.org/check?uri=referer">here</a></p>
+</footer>
+</body>

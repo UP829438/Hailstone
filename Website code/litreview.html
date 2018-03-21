@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Literature Review</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <button aria-label="Menu" onclick="runDropDown()" class="dropmenu"><img class="dropimg" src="img/drawing.svg" alt="" id="image"></button>
+                <div id="drop" class="dropdowncontent">
+                    <a href="index.html">Home</a>
+                    <a class="current" href="litreview.html">Literature review</a>
+                    <a href="discovlog.html">Discovery Log</a>
+                    <a href="video.html">Video</a>
+                </div>
+                <li class="title">
+                    <h1>Literature Review</h1> </li>
+        </ul>
+        <!--All text for literature review put in a div -->
+    </nav>
+    <div class="reviewtext">
+        <h2 class="reviewtitle">Preventing Data Leakage on the web</h2>
+        <p class="upnum">
+            UP829438
+        </p>
+        <p>
+            Personal information is becoming increasingly more available online, which has also created more opportunities for an attack to occur. The main focus of this review is the concept of data leakage. Data leakage can be described as the unauthorized transfer
+            of data within a company to an external source <cite><a href="#gordon">(Peter Gordon, 2007, p.5/6)</a></cite>. The themes within this that the review will explore will be what information companies keep about us, how those companies
+            are supposed to be protecting your data and the inadequacies within those companies, and finally what can be done about it. There is a large amount of research surrounding this topic, and this review will look at some of the more high profile
+            articles surrounding the topic of information exposure.
+        </p>
+        <p>
+            There are two main types of information companies keep on us. The first is information that we freely give companies to do what they wish, such as social media posts or shopping loyalty cards. The second and most valuable type of information is privately
+            kept data, such as credit card information and address data. An example of a type of data that has both publicly available and privately available information would be through mobile phones. Zhu et al <cite><a href="#zhu">(Zhu, Yan, Li, 2016, p.334)</a></cite>            believe that because there is such a variation within the mobile market, such as carriers, it creates a security flaw as the variation allows hackers to extract personal information with relative ease. He <cite><a href="#zhu">(Zhu, 2016, p.335)</a></cite>            then goes on to talk about how 94% of mobile phone users in China do not have a sense of security when it comes to mobile phones. Finally, the article then suggests ways of improving the current system by install security software on their
+            mobile phones and suggests that a standard <cite><a href="#zhu">(Zhu, 2016, p.336)</a></cite> security system should be developed and integrated into all new mobile phones. Health data is an example of privately given data to companies. Khan
+            et al <cite><a href="#khan">(Hoque, Sayed, 2016, p.283)</a></cite> believes that health data is inadequately protected. Among the methods that could reduce the risk is the screening of current software for loopholes that could create a form
+            of entry for hackers to enter the system <cite><a href="#khan">(khan, 2016, p.284)</a></cite>. Looking at both articles, there is a trend emerging which is that as a suggested prevention method, the improvement of the current system seems
+            to be the most preferred method of decreasing the likelihood of an attack rather than developing completely new solutions for the problems. This is likely due to the cost of developing new software compared to improving current software.
+        </p>
+        <p>
+            There are a number of ways in which companies are required to be protecting your data. The introduction of the Data Protection Act in 1998 means that companies operating in the European Economic Area (EEA) have to conform to the guidelines set by the
+            act <cite><a href="#dpa">(Wilmslow : Information Commissioner's Office)</a></cite>. This means that companies are required to have hack detection and prevention methods implemented into their systems. Ross Brewer <cite><a href="#brewer">(Brewer, 2016, p.5)</a></cite>            states that Ransomware is becoming a very popular form of attack to companies. Ransomware is the process of a hacker restricting important information then charging an amount of money to lift that restriction. The article then suggests some
+            methods for preventing this kind of attack <cite><a href="#brewer">(Brewer, 2016, p.7/8)</a></cite> such as preparing for an attack by bolstering current security systems and having a detection system that recognises the attack before any
+            information can be gained. Shekokar et al however, believes that phishing also has significant importance <cite><a href="#shek">(Shekokar, Shah, Mahajan, Rachh, 2015, p. 83)</a></cite> and explains that phishing is the process of creating
+            a phony website that is identical to the original then sending official looking emails in order to extract the target’s information through the insertion of login information into the fake website <cite><a href="#shek">(Shekokar, 2015, p.83)</a></cite>.
+            He also presents methods for the mitigation of attacks, such as an algorithm that checks the link provided in the email by analysing the difference between the phishing link and the actual link <cite><a href="#shek">(Shekokar, 2015, p.87)</a></cite>.
+            There will always be an inherent inadequacy within companies’ security systems as protection always follows attack. This means that companies will only be able to update and prevent attacks on their systems when attacks actually occur.
+        </p>
+        <p>
+            There are many different ways in which a company can take precautions to help prevent the exposure of data. There is no one method to prevent data exposure however, as attacks can wildly vary. As mentioned previously, the preferred method of security
+            prevention is upgrading the current security system. Some services however, such as cloud computing services have to use other methods to detect any attacks. Salman et al <cite><a href="#sal">(Salman, 2016, p.112/113)</a></cite>            suggests an Intrusion detection system (IDS) as a form of defence against unwanted attacks with cloud computing. An IDS works in different ways, one such way is comparing the packets being sent with some files on the system that are known
+            as malicious files <cite><a href="#sal">(Salman, 2016, p.112)</a></cite>. An example of a method where an IDS is used would be deploying the IDS into a virtual machine. This then allows you to monitor and search for any unusual behaviour.
+            Yousef <cite><a href="#yousef">(Yousef, 2016, p. 65)</a></cite> suggests an Intrusion Prevention system (IPS) in relation to web servers as a prevention method. An IPS is another tool that can be used to enhance the security level. An interesting
+            point about the IPS is that it can be integrated with any IDS’s on the network also, increasing the security level <cite><a href="#yousef">(Yousef, 2016, p.68/69)</a></cite>.
+        </p>
+        <p>
+            In conclusion, the task of mitigating personal information exposure on the web is extremely difficult. This is because there are so many systems and many different types of security systems. The lack of a single standard means that security systems vary
+            and have different pros and cons. The prevention of an attack will always follow the attack itself and this means that all security systems have an inherent flaw of being one step behind.
+        </p>
+    </div>
+    <div class="ref">
+        <h2>References</h2>
+        <p id="gordon">
+            [1] Peter Gordon (2007) Data Leakage – Threats and Mitigation. Retrieved from <a href="https://www.sans.org/reading-room/whitepapers/awareness/data-leakage-threats-mitigation-1931">https://www.sans.org/reading-room/whitepapers/awareness/data-leakage-threats-mitigation-1931</a>
+        </p>
+        <p id="zhu">
+            [2] Yongbin, Z., Li, Y., &amp; Junsheng, L. (2016). Mobile Internet Information Security Analysis and Countermeasures. Telkomnika, 14(3A), 333-337. doi:10.12928/TELKOMNIKA.v14i3A.4417
+        </p>
+        <p id="khan">
+            [3] Khan, S. I., &amp; Latiful Hoque, A. M. (2016). Digital Health Data: A Comprehensive Review of Privacy and Security Risks and Some Recommendations. Computer Science Journal Of Moldova, 24(2), 273-292
+        </p>
+        <p id="dpa">
+            [4] Data Protection Act. (n.d). Wilmslow : Information Commissioner's Office.
+        </p>
+        <p id="brewer">
+            [5] Brewer, R. (2016). Ransomware attacks: detection, prevention and cure. Network Security, 2016(9), 5-9. doi:10.1016/S1353-4858(16)30086-1
+        </p>
+        <p id="shek">
+            [6] Shekokar, N. M., Shah, C., Mahajan, M., &amp; Rachh, S. (2015). An Ideal Approach for Detection and Prevention of Phishing Attacks. Procedia Computer Science, 49(Proceedings of 4th International Conference on Advances in Computing, Communication and
+            Control (ICAC3'15), 82-91. doi:10.1016/j.procs.2015.04.230
+        </p>
+        <p id="sal">
+            [7] Iqbal, S., Mat Kiah, M. L., Dhaghighi, B., Hussain, M., Khan, S., Khan, M. K., &amp; Raymond Choo, K. (2016). Review: On cloud security attacks: A taxonomy and intrusion detection and prevention as a service. Journal Of Network And Computer Applications,
+            7498-120. doi:10.1016/j.jnca.2016.08.016
+        </p>
+        <p id="yousef">
+            [8] Farhaoui, Y. (2016). How to secure web servers by the intrusion prevention system (IPS)?. International Journal Of Advanced Computer Research, 6(23), 65-71. doi:10.19101/IJACR.2016.623028
+        </p>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <p>&copy; copyright student 2017</p>
+        <p> Link to validation of this page -<a href="http://validator.w3.org/check?uri=referer">here</a></p>
+    </footer>
+
+</body>
+
+</html>

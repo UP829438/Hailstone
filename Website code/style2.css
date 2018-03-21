@@ -1,0 +1,40 @@
+.reviewtext {
+    padding: 1em 20%;
+}
+.reviewtitle {
+  float:left;
+
+}
+.reviewtext p {
+    padding-top: 1em;
+    text-align: justify;
+}
+.reviewtext .upnum {
+    padding-bottom: 1em;
+    float: right;
+    padding-left: 100vw
+}
+.ref {
+    padding: 0 20%;
+    padding-bottom: 1em;
+}
+.ref p {
+    padding-top: 1em;
+    word-wrap: break-word;
+}
+.quicklink {
+  padding-top: 1em;
+  padding-left: 1em;
+  font-weight: bold;
+}
+.ref p:last-child {
+  margin-bottom: 2em;
+}
+@media only screen and (max-width: 43em) {
+  .ref {
+    padding: 0 10%;
+  }
+  .reviewtext {
+    padding: 0 10%;
+  }
+}
