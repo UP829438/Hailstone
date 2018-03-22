@@ -1,26 +1,16 @@
 package hailstone;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.Collections;
+import java.util.*;
 /**
  * @author Connor Wallace - UP829438
  */
 public class Hailstone {
-    ArrayList hailArray = new ArrayList();
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         int hailStart = getStart();
-        int hailDirection = getDirection();
-        Hailstone object = new Hailstone();
-        object.genHailArray(hailStart);
-        if (hailDirection == 2) {
-            object.reverseArray();
-        }
-        System.out.println("Hailstone sequence: ");
-        System.out.println(object.hailArray);
+        boolean hailDirection = getDirection();
+        genHailArray(hailStart, hailDirection);
     }
     /**
      * @return hailStart - starting position for the hailstone sequence.
@@ -48,7 +38,7 @@ public class Hailstone {
     /**
      * @return hailDirection - whether the user wants the array to be reversed or not
      */
-    private static int getDirection() {
+    private static boolean getDirection() {
      String hailInput;
      int hailDirection;
      Scanner input = new Scanner(System.in);
@@ -57,35 +47,31 @@ public class Hailstone {
      try {
              hailInput = input.next();
              hailDirection = Integer.parseInt(hailInput);
-             if(hailDirection == 1 || hailDirection == 2) {
-                 break;
-             }
+             if(hailDirection == 1) return true;
+             if(hailDirection == 2) return false;
+             System.out.println("Invalid number entered.");
      } catch (NumberFormatException e) {
          System.out.println("Invalid input.");
      }
      }
-     return hailDirection;
     }
     /**
      * @param hailstart - position for start of sequence
-     * uses recursion to add to array the sequence and continue adding the next number
+     * uses recursion to print the sequence and continue adding the next number
      */
-    private void genHailArray(int hailstart) {
+    private static void genHailArray(int hailstart, boolean haildirection) {
      if (hailstart == 1) {
-        hailArray.add(hailstart);
+        System.out.println(hailstart);
         return;
      }
+     if (haildirection) System.out.println(hailstart + "");
      if (hailstart % 2 == 0) {
-         hailArray.add(hailstart);
-         genHailArray(hailstart / 2);
+         genHailArray(hailstart / 2, haildirection);
      }
      if (hailstart % 2 == 1) {
-         hailArray.add(hailstart);
-         genHailArray((hailstart * 3) + 1);
+         genHailArray((hailstart * 3) + 1, haildirection);
      }
-    }
-    private void reverseArray() {
-        Collections.reverse(hailArray);
+     if(!haildirection) System.out.println(hailstart + "");
     }
 }
     
